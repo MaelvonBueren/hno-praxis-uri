@@ -26,6 +26,9 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+.menu-toggle {
+  display: none; /* default: hidden */
+}
 
 a {
   color: var(--dark-color);
@@ -433,9 +436,10 @@ h2 {
     display: block;
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: 32px;
     cursor: pointer;
     color: var(--dark-color);
+    margin-left: auto;
   }
 
   /* HEADER */
