@@ -292,20 +292,21 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(8px);
+  background: transparent;
+  backdrop-filter: none;
   border-radius: 12px;
-  padding: 32px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  box-shadow: none;
   margin-top: 32px;
 }
 
 .map {
   flex: 1 1 400px;
   min-height: 300px;
-  border: 3px solid var(--accent-color);
+  /*border: 3px solid var(--accent-color);*/
   border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
 }
 
 .map iframe {
