@@ -393,3 +393,77 @@ h2 {
 .footer-bottom p {
   color: var(--dark-color);
 }
+
+/* ================= MOBILE STYLES ================= */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll; /* Prevent background from sticking */
+    background-size: cover;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .menu-items {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .centered-header {
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .team-grid {
+    flex-direction: column;
+    padding-inline: 16px;
+  }
+
+  .doctor-photo {
+    width: 180px;
+    height: 180px;
+  }
+
+  .content-section {
+    padding: 16px;
+    margin: 32px 16px;
+  }
+
+  .contact-card {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .contact-info {
+    padding: 16px;
+  }
+
+  .map {
+    min-height: 250px;
+  }
+
+  .site-footer {
+    padding: 24px 16px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
