@@ -395,3 +395,114 @@ h2 {
 }
 
 /* ================= MOBILE STYLES ================= */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+  /* NAVBAR */
+  nav {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 16px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .menu-items {
+    display: none;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    top: 64px;
+    right: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+
+  .menu-items.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--dark-color);
+  }
+
+  /* HEADER */
+  .centered-header {
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    align-items: center;
+  }
+
+  /* TEAM SECTION */
+  .team-grid {
+    flex-direction: column;
+    padding-inline: 16px;
+  }
+
+  .doctor-photo {
+    width: 180px;
+    height: 180px;
+  }
+
+  /* OPENING HOURS */
+  .opening-hours {
+    padding: 16px;
+  }
+
+  .hours-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  /* CONTACT SECTION */
+  .contact-card {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .map {
+    min-height: 250px;
+  }
+
+  .contact-info {
+    padding: 16px;
+    font-size: 14px;
+  }
+
+  /* FOOTER */
+  .site-footer {
+    padding: 24px 16px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footer-right {
+    order: -1;
+  }
+}
