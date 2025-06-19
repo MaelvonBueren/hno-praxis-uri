@@ -407,13 +407,23 @@ h2 {
 
   /* NAVBAR */
   nav {
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
     padding: 16px;
+    position: relative;
   }
 
   .logo {
     font-size: 16px;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--dark-color);
   }
 
   .menu-items {
@@ -433,14 +443,8 @@ h2 {
     display: flex;
   }
 
-  .menu-toggle {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 32px;
-    cursor: pointer;
-    color: var(--dark-color);
-    margin-left: auto;
+  .menu-items a {
+    padding: 8px 0;
   }
 
   /* HEADER */
