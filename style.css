@@ -407,10 +407,10 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("images/frontpage_phone2.jpg"); /* your vertical image */
+    background-image: url("images/frontpage_phone.jpg"); /* your vertical image */
     background-size: cover;
     background-position: center;
-    filter: blur(4px); /* gentle softening */
+    filter: blur(0px); /* gentle softening */
     z-index: -1;
   }
 
