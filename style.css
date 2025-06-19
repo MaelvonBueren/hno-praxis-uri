@@ -438,12 +438,12 @@ h2 {
     font-size: 32px;
   }
 
-  .buttons {
+  /*.buttons {
     flex-direction: column;
     gap: 12px;
     width: 100%;
     align-items: center;
-  }
+  }*/
 
   /* TEAM SECTION */
   .team-grid {
