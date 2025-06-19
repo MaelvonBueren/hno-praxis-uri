@@ -220,6 +220,7 @@ h2 {
   margin: 0;
   font-size: 24px;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .doctor-card .title {
@@ -499,12 +500,17 @@ h2 {
   }
 
   .map {
-    min-height: 250px;
+    min-height: 200px;
+    height: 200px;
+  }
+  .map iframe {
+    height: 100%;
   }
 
   .contact-info {
     padding: 16px;
     font-size: 14px;
+    white-space: nowrap;
   }
 
   /* FOOTER */
