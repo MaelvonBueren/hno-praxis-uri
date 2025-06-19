@@ -401,8 +401,11 @@ h2 {
 /* ================= MOBILE STYLES ================= */
 @media (max-width: 800px) {
   body {
-    background-attachment: scroll;
-    background-size: cover;
+    background-image: url("images/frontpage_phone.jpg");
+    background-size: cover; /* try this instead of cover */
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: white;
   }
 
   /* NAVBAR */
