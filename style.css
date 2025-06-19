@@ -26,7 +26,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.menu-toggle {
+.menu-toggle,
+.mobile-menu-items {
   display: none; /* default: hidden */
 }
 
@@ -445,6 +446,52 @@ h2 {
 
   .logo {
     font-size: 16px;
+  }
+
+  .mobile-menu-items {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    flex-direction: column;
+
+    z-index: 800;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    transform: translateX(100%);
+    transition: all 300ms ease;
+  }
+
+  .mobile-menu-items::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("images/frontpage_phone.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+  }
+
+  .mobile-menu-items.active {
+    transform: translateX(0);
+  }
+  .mobile-menu-items .close-menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+    position: fixed;
+    top: 32px;
+    right: 32px;
+  }
+  .mobile-menu-items a {
+    color: var(--light-color);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   }
 
   .menu-toggle {

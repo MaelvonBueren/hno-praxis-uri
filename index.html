@@ -7,6 +7,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!--mobile menue-->
+
+    <div class="mobile-menu-items">
+      <button class="close-menu-toggle" aria-label="Menü schliessen">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          width="32"
+          height="24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18 18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+      <a href="#team">Team</a>
+      <a href="#oeffnungszeiten">Öffnungszeiten</a>
+      <a href="#kontakt">Karte</a>
+      <a href="#kontakt" class="btn">Kontakt</a>
+    </div>
+
+    <!--mobile menue end-->
+
     <div class="container">
       <nav>
         <div class="logo">
@@ -19,11 +47,7 @@
           <a href="#kontakt">Karte</a>
           <a href="#kontakt" class="btn">Kontakt</a>
         </div>
-        <button
-          class="menu-toggle"
-          onclick="toggleMenu()"
-          aria-label="Menü öffnen"
-        >
+        <button class="menu-toggle" aria-label="Menü öffnen">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
