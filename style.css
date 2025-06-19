@@ -333,6 +333,14 @@ h2 {
   margin: 0;
   font-size: 18px;
   line-height: 1.6;
+  position: relative;
+  padding-left: 1.5em;
+}
+
+.contact-info .icon {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .contact-info a {
@@ -474,7 +482,7 @@ h2 {
   /* TEAM SECTION */
   .team-grid {
     flex-direction: column;
-    padding-inline: 16px;
+    padding-inline: 0px;
   }
 
   .doctor-card {
@@ -514,8 +522,8 @@ h2 {
   /* CONTACT SECTION */
   .contact-card {
     flex-direction: column;
-    padding: 16px;
-    transform: scale(0.95);
+    padding: 0px;
+    transform: scale(0.9);
     width: 100%;
   }
 
@@ -524,12 +532,19 @@ h2 {
   }
 
   .contact-info {
+    margin: 0 auto;
     padding: 16px;
-    font-size: 14px;
+    font-size: 8px;
     overflow-wrap: break-word;
     word-break: break-word;
     white-space: normal;
   }
+
+  .contact-info a {
+    transform: scale(0.9);
+    font-size: 90%;
+  }
+
   /* FOOTER */
   .site-footer {
     padding: 24px 16px;
