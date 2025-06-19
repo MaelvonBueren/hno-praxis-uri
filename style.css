@@ -477,9 +477,27 @@ h2 {
     padding-inline: 16px;
   }
 
+  .doctor-card {
+    transform: scale(0.9);
+    width: 100%;
+    font-size: 90%;
+    margin: 0 auto;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+  }
+
   .doctor-photo {
     width: 180px;
     height: 180px;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .doctor-card h3 {
+    font-size: 18px;
   }
 
   /* OPENING HOURS */
@@ -497,22 +515,21 @@ h2 {
   .contact-card {
     flex-direction: column;
     padding: 16px;
+    transform: scale(0.95);
+    width: 100%;
   }
 
   .map {
     min-height: 200px;
-    height: 200px;
-  }
-  .map iframe {
-    height: 100%;
   }
 
   .contact-info {
     padding: 16px;
     font-size: 14px;
-    white-space: nowrap;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
   }
-
   /* FOOTER */
   .site-footer {
     padding: 24px 16px;
