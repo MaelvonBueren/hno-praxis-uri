@@ -436,6 +436,7 @@ h2 {
 
   h1 {
     font-size: 32px;
+    white-space: nowrap;
   }
 
   /*.buttons {
