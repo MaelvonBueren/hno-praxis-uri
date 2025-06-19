@@ -528,7 +528,7 @@ h2 {
   }
 
   .map {
-    min-height: 200px;
+    max-height: 50px;
   }
 
   .contact-info {
