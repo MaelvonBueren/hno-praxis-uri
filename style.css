@@ -576,8 +576,10 @@ h2 {
 
   .map {
     width: 100%;
-    height: auto;
-    min-height: 250px; /* or increase to 300px */
+    height: 300px;
+    min-height: 300px; /* or increase to 300px */
+    position: relative;
+    flex: none;
   }
 
   .map iframe {
